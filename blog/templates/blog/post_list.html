@@ -230,6 +230,16 @@
         	background-size: cover;
         }
 
+        .blogpost h1 {
+            font-size: 20px;
+            text-align: left
+          }
+
+        .blogpost p {
+            font-size: 15px;
+            text-align: left;
+        }
+
         </style>
     </head>
 
@@ -318,7 +328,7 @@
 
 
 {% for post in posts %}
-    <div>
+    <div class="blogpost">
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaksbr }}</p>
