@@ -232,12 +232,14 @@
 
         .blogpost h1 {
             font-size: 20px;
-            text-align: left
+            text-align: left;
+            padding-left: 5px;
           }
 
         .blogpost p {
             font-size: 15px;
             text-align: left;
+            padding-left: 5px;
         }
 
         </style>
@@ -263,7 +265,7 @@
     <div class="container">
      <div class="main">
        <h2>WELCOME TO MY BLOG</h2>
-       <h1>WELCOME TO MY BLOG</h1>
+       <h1>WELCOME</h1>
      </div>
    </div>
   </div>
@@ -332,6 +334,7 @@
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaksbr }}</p>
+        <p> Hi this is a test </p>
     </div>
 {% endfor %}
 
